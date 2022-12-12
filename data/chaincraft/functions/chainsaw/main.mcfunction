@@ -1,3 +1,9 @@
+#> chaincraft:chainsaw/main
+#   Controlls all the stuff of the chainsaw man
+#
+# Callers:
+#   > chaincraft:player/main
+
 effect give @s invisibility 5 0 true
 effect give @s speed 5 0 true
 effect give @s resistance 5 1 true

@@ -1,0 +1,1 @@
+execute as @s[nbt={Item:{id:"minecraft:stone"}}] unless block ~ ~-.2 ~ air run function chaincraft:zombie/crowd/summon_body

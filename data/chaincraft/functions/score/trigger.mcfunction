@@ -3,4 +3,7 @@
 #
 # Callers:
 #   > chaincraft:player/main
-say @s killed something
+
+scoreboard players set @s combo_cooldown 40
+scoreboard players operation @s[scores={combo=..10}] score += @s combo
+scoreboard players add @s[scores={combo=11..}] score 10

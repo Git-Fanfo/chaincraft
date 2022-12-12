@@ -7,6 +7,12 @@ scoreboard objectives add stored_kills dummy
 
 scoreboard objectives add chainsaw dummy
 
+scoreboard objectives add combo totalKillCount
+scoreboard objectives add score dummy
+scoreboard objectives add combo_cooldown dummy
+scoreboard objectives add combo_useable dummy
+#combo_useable follows along with combo however is for the purpose of being reset when an ability is used.
+
 ## Zombies
 # Despawn corpse
 scoreboard objectives add despawn dummy

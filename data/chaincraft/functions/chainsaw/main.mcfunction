@@ -18,8 +18,13 @@ scoreboard players remove idle chainsaw 1
 scoreboard players operation @s stored_kills -= @s kills
 execute if score @s stored_kills matches ..-1 run playsound minecraft:chaincraft.chainsaw.cut record @s ~ ~ ~ 1 1.2
 ## Here
-## execute if score @s stored_kills matches ..-1 run function chaincraft:score/trigger
+execute if score @s stored_kills matches ..-1 run function chaincraft:score/trigger
 scoreboard players operation @s stored_kills = @s kills
+
+# Inter-Kill combo reset
+scoreboard players remove @s[scores={combo_cooldown=1..}] combo_cooldown 1
+scoreboard players set @s[scores={combo=1..,combo_cooldown=0}] combo 0
+scoreboard players set @s[scores={combo_useable=1..,combo=0}] combo_useable 0
 
 # Used string
 execute as @s[tag=string] run function chaincraft:chainsaw/ability/effects

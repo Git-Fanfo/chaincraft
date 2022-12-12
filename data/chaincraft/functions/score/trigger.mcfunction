@@ -1,1 +1,1 @@
-# say @s killed something
+say @s killed something

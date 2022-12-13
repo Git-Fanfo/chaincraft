@@ -7,6 +7,7 @@ scoreboard objectives add stored_kills dummy
 
 scoreboard objectives add chainsaw dummy
 
+scoreboard objectives add timer dummy
 scoreboard objectives add combo totalKillCount
 scoreboard objectives add score dummy
 scoreboard objectives add combo_cooldown dummy

@@ -1,0 +1,1 @@
+execute if score run_second timer matches 1.. run function chaincraft:zombie/strength/track_player

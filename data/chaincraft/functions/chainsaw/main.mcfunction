@@ -4,10 +4,7 @@
 # Callers:
 #   > chaincraft:player/main
 
-effect give @s invisibility 5 0 true
-effect give @s speed 5 0 true
-effect give @s resistance 5 1 true
-effect give @s jump_boost 5 0 true
+execute if score run_second timer matches 1.. run function chaincraft:chainsaw/effects
 
 # Idle effects
 execute if score idle chainsaw matches ..0 run scoreboard players set idle chainsaw 99

@@ -30,5 +30,5 @@ scoreboard objectives add motion_x1 dummy
 scoreboard objectives add motion_y1 dummy
 scoreboard objectives add motion_z1 dummy
 
-team add motion
-team modify motion collisionRule always
+team add zombie
+team modify zombie collisionRule always

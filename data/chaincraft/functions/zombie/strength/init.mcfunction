@@ -1,2 +1,3 @@
-say TODO: init
-tag @s add init
+# say TODO: init
+team join zombie
+tag @s remove init

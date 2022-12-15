@@ -15,3 +15,8 @@ effect give @s[scores={combo=4}] speed 5 2 true
 effect give @s[scores={combo=6}] speed 5 3 true
 effect give @s[scores={combo=8}] speed 5 4 true
 effect give @s[scores={combo=10}] speed 5 5 true
+
+#Combo graphics
+title @s[scores={combo=..9}] title {"score":{"name":"@s","objective":"combo"},"color":"gold"}
+title @s[scores={combo=10..}] title {"score":{"name":"@s","objective":"combo"},"color":"red"}
+##Colour will be used to show which abilities can be used.

@@ -14,6 +14,8 @@ scoreboard objectives add combo_cooldown dummy
 scoreboard objectives add combo_useable dummy
 scoreboard objectives add health health
 scoreboard objectives add stored_health dummy
+scoreboard objectives add combo_calc dummy
+scoreboard players set constant.100 combo_calc 100
 #combo_useable follows along with combo however is for the purpose of being reset when an ability is used.
 
 ## Zombies

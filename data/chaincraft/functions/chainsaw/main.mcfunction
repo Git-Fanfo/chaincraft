@@ -23,5 +23,11 @@ scoreboard players remove @s[scores={combo_cooldown=1..}] combo_cooldown 1
 scoreboard players set @s[scores={combo=1..,combo_cooldown=0}] combo 0
 scoreboard players set @s[scores={combo_useable=1..,combo=0}] combo_useable 0
 
+# Take damage
+scoreboard players operation @s stored_health -= @s health
+execute if score @s stored_health matches 1.. run function chaincraft:score/reset
+scoreboard players operation @s stored_health = @s health
+
+
 # Used string
 execute as @s[tag=string] run function chaincraft:chainsaw/ability/effects

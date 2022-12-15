@@ -41,6 +41,32 @@
                 }
               }
             ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:light_gray_bed",
+            "conditions": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "nbt": "{Tags:[\"4\"]}"
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:cyan_bed",
+            "conditions": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "nbt": "{Tags:[\"5\"]}"
+                }
+              }
+            ]
           }
         ]
       }

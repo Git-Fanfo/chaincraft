@@ -1,0 +1,20 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "type": {
+              "source_entity": {
+                "type": "minecraft:husk"
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "chaincraft:zombie/bloody/blood"
+    }
+  }
+  

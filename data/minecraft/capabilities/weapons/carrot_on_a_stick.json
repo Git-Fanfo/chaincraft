@@ -4,21 +4,21 @@
 		"common": {
 			"armor_negation": 0.0,
   			"impact": 0.5,
-			"max_strikes": 5,
+			"max_strikes": 3,
 			"damage_bonus": 10,
             "speed_bonus": 1
 		},
 		"one_hand": {
 			"armor_negation": 0.0,
   			"impact": 0.5,
-			"max_strikes": 5,
+			"max_strikes": 3,
 			"damage_bonus": 10,
             "speed_bonus": 1
 		},
 		"two_hand": {
 			"armor_negation": 0.0,
   			"impact": 0.5,
-			"max_strikes": 5,
+			"max_strikes": 3,
 			"damage_bonus": 10,
             "speed_bonus": 1
 		}

@@ -1,0 +1,1 @@
+data modify entity @s HandItems set value [{id:"minecraft:wooden_sword", Count: 1b},{id:"minecraft:wooden_sword", Count: 1b}]

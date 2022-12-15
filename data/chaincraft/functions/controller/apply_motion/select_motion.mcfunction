@@ -1,0 +1,1 @@
+execute as @s[type=drowned] run function chaincraft:controller/apply_motion/jumper

@@ -4,10 +4,14 @@
 # Callers:
 #   > chaincraft:player/main
 
-#Add to the total score
+#Reset timer
 scoreboard players set @s combo_cooldown 100
-scoreboard players operation @s[scores={combo=..10}] score += @s combo
-scoreboard players add @s[scores={combo=11..}] score 10
+
+#Add to the total score
+scoreboard players operation @s[scores={combo=..10}] combo_calc = @s combo
+scoreboard players operation @s[scores={combo=..10}] combo_calc *= constant.100 combo_calc
+scoreboard players operation @s[scores={combo=..10}] score += @s combo_calc
+scoreboard players add @s[scores={combo=11..}] score 1000
 
 #Apply corresponding to current combo (if there's an easier way, please tell me)
 effect give @s[scores={combo=2}] speed 5 1 true

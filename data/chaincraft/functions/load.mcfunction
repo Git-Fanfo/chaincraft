@@ -1,6 +1,8 @@
 say hi! Blue!
 say Hello
 
+gamerule mobGriefing false
+
 scoreboard objectives add using_carrot minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add kills totalKillCount
 scoreboard objectives add stored_kills dummy
@@ -24,6 +26,9 @@ scoreboard objectives add despawn dummy
 
 # Jumper
 scoreboard objectives add jumper dummy
+
+# Zombie Devil
+scoreboard objectives add zombie_devil dummy
 
 # Pos0 and Pos1 for give motion to entities
 scoreboard objectives add motion_x0 dummy

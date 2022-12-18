@@ -13,8 +13,6 @@ scoreboard players remove idle chainsaw 1
 
 # Chainsaw killed something
 scoreboard players operation @s stored_kills -= @s kills
-execute if score @s stored_kills matches ..-1 run playsound minecraft:chaincraft.chainsaw.cut record @s ~ ~ ~ 1 1.2
-execute if score @s stored_kills matches ..-1 run scoreboard players add charge zombie_devil 1
 ## Here
 execute if score @s stored_kills matches ..-1 run function chaincraft:score/trigger
 scoreboard players operation @s stored_kills = @s kills

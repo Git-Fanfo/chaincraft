@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "entity": {
+            "type": "minecraft:slime",
+            "nbt": "{Tags:[\"weak_point\"]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "chaincraft:zombie/devil/player_hit_weak"
+    }
+  }

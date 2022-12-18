@@ -1,3 +1,3 @@
-summon drowned ~ ~ ~ {PersistenceRequired:1b,Tags:["init","1","jump"],HandDropChances:[0.000F,0.000F],ArmorItems:[{},{},{},{id:"minecraft:feather",Count:1b,tag:{CustomModelData:12}}],ArmorDropChances:[0.000F,0.000F,0.000F,0.000F],Attributes:[{Name:generic.max_health,Base:20},{Name:generic.follow_range,Base:40},{Name:generic.knockback_resistance,Base:0.5},{Name:generic.movement_speed,Base:0.3},{Name:generic.attack_knockback,Base:1}]}
+summon drowned ~ ~ ~ {PersistenceRequired:1b,Tags:["zombie","init","1","jump"],HandDropChances:[0.000F,0.000F],ArmorItems:[{},{},{},{id:"minecraft:feather",Count:1b,tag:{CustomModelData:12}}],ArmorDropChances:[0.000F,0.000F,0.000F,0.000F],Attributes:[{Name:generic.max_health,Base:20},{Name:generic.follow_range,Base:40},{Name:generic.knockback_resistance,Base:0.5},{Name:generic.movement_speed,Base:0.3},{Name:generic.attack_knockback,Base:1}]}
 
 function chaincraft:controller/kill_mob

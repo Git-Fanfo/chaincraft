@@ -1,1 +1,1 @@
-summon armor_stand ~ ~ ~ {Tags:["zombie_devil"],Pose:{RightArm:[0f,0f,0f]},HandItems:[{id:'minecraft:feather',Count:1b,tag:{CustomModelData:21}},{}]}
+summon armor_stand ~ ~ ~ {Invisible:1b,Tags:["zombie_devil"],Pose:{RightArm:[0f,0f,0f]},HandItems:[{id:'minecraft:feather',Count:1b,tag:{CustomModelData:21}},{}]}

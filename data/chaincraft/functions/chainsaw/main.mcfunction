@@ -31,4 +31,4 @@ scoreboard players operation @s stored_health = @s health
 
 
 # Used string
-execute as @s[tag=cord] run function chaincraft:chainsaw/ability/effects
+execute as @s[tag=cord] run function chaincraft:chainsaw/ability/action

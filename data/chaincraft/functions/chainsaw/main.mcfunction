@@ -27,6 +27,11 @@ scoreboard players operation @s stored_health -= @s health
 execute if score @s stored_health matches 1.. run function chaincraft:score/reset
 scoreboard players operation @s stored_health = @s health
 
-
 # Used string
 execute as @s[tag=cord] run function chaincraft:chainsaw/ability/action
+
+# Prevent removing armor
+execute unless data entity @s Inventory[{Slot:103b}] run function chaincraft:chainsaw/get
+execute unless data entity @s Inventory[{Slot:102b}] run function chaincraft:chainsaw/get
+execute unless data entity @s Inventory[{Slot:101b}] run function chaincraft:chainsaw/get
+execute unless data entity @s Inventory[{Slot:100b}] run function chaincraft:chainsaw/get

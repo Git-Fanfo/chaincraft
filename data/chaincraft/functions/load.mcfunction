@@ -1,5 +1,6 @@
 say hi! Blue!
 say Hello
+say TODO: spawn first corpse and after some time set model
 
 gamerule mobGriefing false
 gamerule fallDamage false

@@ -5,6 +5,6 @@ scoreboard players remove @s despawn 1
 execute if score @s despawn matches ..0 run particle block redstone_block ^ ^ ^1 .5 .1 .5 1 50 force
 execute if score @s despawn matches ..0 run kill
 
-execute if entity @s[tag=eaten] run scoreboard players remove @s despawn 100
+execute if entity @s[tag=eaten] run scoreboard players remove @s despawn 150
 # Remove being eaten
 tag @s remove eaten

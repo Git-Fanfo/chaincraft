@@ -4,14 +4,12 @@
 		"one_hand": {
 			"armor_negation": 0.0,
   			"impact": 0.5,
-			"max_strikes": 3,
-            "speed_bonus": 1
+			"max_strikes": 3
 		},
 		"two_hand": {
 			"armor_negation": 0.0,
   			"impact": 0.5,
-			"max_strikes": 3,
-            "speed_bonus": 1
+			"max_strikes": 3
 		}
 	}
 }

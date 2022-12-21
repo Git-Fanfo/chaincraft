@@ -7,7 +7,7 @@ gamerule fallDamage false
 
 # Initial config
 scoreboard objectives add config dummy
-execute unless score epicfights config matches 0.. run scoreboard players set epicfights config 1
+execute unless score epicfights config matches 0.. run scoreboard players set epicfights config 0
 
 scoreboard objectives add using_carrot minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add kills totalKillCount

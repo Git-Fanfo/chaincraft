@@ -19,7 +19,6 @@ scoreboard players operation @s stored_kills = @s kills
 # Inter-Kill combo reset
 scoreboard players remove @s[scores={combo_cooldown=1..}] combo_cooldown 1
 scoreboard players set @s[scores={combo=1..,combo_cooldown=0}] combo 0
-scoreboard players set @s[scores={combo_useable=1..,combo=0}] combo_useable 0
 
 # Take damage
 scoreboard players operation @s stored_health -= @s health

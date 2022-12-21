@@ -22,7 +22,8 @@ effect give @s[scores={combo=2}] speed 5 1 true
 effect give @s[scores={combo=4}] speed 5 2 true
 effect give @s[scores={combo=6}] speed 5 3 true
 effect give @s[scores={combo=8}] speed 5 4 true
-effect give @s[scores={combo=10}] speed 5 5 true
+effect give @s[scores={combo=10..}] speed 5 5 true
+effect give @s[scores={combo=10..}] strength 5 4 true
 
 #Combo graphics
 title @s[scores={combo=..9}] title {"score":{"name":"@s","objective":"combo"},"color":"gold"}

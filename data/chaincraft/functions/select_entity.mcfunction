@@ -6,6 +6,7 @@ execute as @s[type=item] run function chaincraft:item/select_item
 execute as @s[tag=corpse] run function chaincraft:zombie/corpse
 
 ## zombies
+execute as @s[type=chicken] run function chaincraft:controller/kill_mob
 execute as @s[type=zombie] run function chaincraft:zombie/crowd/main
 execute as @s[type=husk] run function chaincraft:zombie/bloody/main
 execute as @s[type=drowned] run function chaincraft:zombie/jump/main

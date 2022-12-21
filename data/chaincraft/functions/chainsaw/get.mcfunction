@@ -1,5 +1,6 @@
 clear @s
 function chaincraft:give/chainsaw/full
+tag @s remove power
 tag @a remove chainsaw
 tag @s add chainsaw
 

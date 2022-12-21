@@ -5,7 +5,6 @@
 #   > chaincraft:player/main
 
 execute if score run_second timer matches 1.. run function chaincraft:chainsaw/effects
-
 # Idle effects
 execute if score idle chainsaw matches ..0 run scoreboard players set idle chainsaw 99
 execute if score idle chainsaw matches 80 run playsound minecraft:chaincraft.chainsaw.idle record @s ~ ~ ~ 1 1

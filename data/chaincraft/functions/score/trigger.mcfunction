@@ -5,7 +5,8 @@
 #   > chaincraft:player/main
 
 # Sfx and zombie_devil system
-execute if score @s stored_kills matches ..-1 run playsound minecraft:chaincraft.chainsaw.cut record @s ~ ~ ~ 1 1.2
+execute as @s[tag=chainsaw] if score @s stored_kills matches ..-1 run playsound minecraft:chaincraft.chainsaw.cut record @a ~ ~ ~ 1 1.2
+execute if score @s stored_kills matches ..-1 run playsound minecraft:chaincraft.power.cut player @a ~ ~ ~ 1 1
 execute if score @s stored_kills matches ..-1 run scoreboard players add charge zombie_devil 1
 
 #Reset timer

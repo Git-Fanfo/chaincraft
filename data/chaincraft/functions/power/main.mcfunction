@@ -6,11 +6,6 @@
 
 execute if score run_second timer matches 1.. run function chaincraft:power/effects
 
-# Idle effects
-#execute if score idle chainsaw matches ..0 run scoreboard players set idle chainsaw 99
-#execute if score idle chainsaw matches 80 run playsound minecraft:chaincraft.chainsaw.idle record @s ~ ~ ~ 1 1
-#scoreboard players remove idle chainsaw 1
-
 # Chainsaw killed something
 scoreboard players operation @s stored_kills -= @s kills
 ## Here

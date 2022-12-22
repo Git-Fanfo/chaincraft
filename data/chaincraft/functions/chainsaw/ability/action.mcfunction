@@ -1,6 +1,6 @@
 execute if score cord chainsaw matches 200 run function chaincraft:give/chainsaw/saw
 execute if score cord chainsaw matches 192 run playsound minecraft:chaincraft.chainsaw.forehead record @s ~ ~ ~ 1 .8
-execute if score cord chainsaw matches 180 run playsound minecraft:chaincraft.chainsaw.laugh record @s ~ ~ ~ 1 .9
+execute if score cord chainsaw matches 180 run playsound minecraft:chaincraft.chainsaw.laugh player @s ~ ~ ~ 1 .9
 
 execute anchored eyes positioned ^ ^ ^.5 run particle block redstone_block ~ ~.1 ~ 0 .3 0 1 3 force
 execute if score run_second timer matches 1.. run function chaincraft:chainsaw/ability/effects

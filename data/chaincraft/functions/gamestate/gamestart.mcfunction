@@ -1,12 +1,3 @@
-tp @s 75 4 -59 135 0
-
-scoreboard players set @s score 0
-
-execute as @a[tag=selecting.chainsaw] at @s run function chaincraft:chainsaw/get
-execute as @a[tag=selecting.power] at @s run function chaincraft:power/get
-scoreboard players set timer config 12000
-scoreboard players set gamestate config 1
-
 summon zombie 73 4 -90
 summon zombie 73 4 -91
 summon zombie 73 4 -92
@@ -32,3 +23,9 @@ summon zombie 69 4 -91
 summon zombie 69 4 -92
 summon zombie 69 4 -93
 summon zombie 69 4 -94
+
+scoreboard players set gamestate config 2
+scoreboard players set timer config 12000
+
+tp @a[tag=chainsaw] 71.5 4 -65 180 0
+tp @a[tag=power] 75 4 -59 135 0

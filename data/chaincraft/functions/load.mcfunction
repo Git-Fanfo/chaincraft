@@ -24,6 +24,7 @@ scoreboard players set max_blood power 50
 
 scoreboard objectives add timer dummy
 scoreboard objectives add combo totalKillCount
+scoreboard objectives add max_combo dummy
 scoreboard objectives add score dummy
 scoreboard objectives add combo_cooldown dummy
 scoreboard objectives add health health

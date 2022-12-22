@@ -13,16 +13,18 @@ execute if score @s stored_kills matches ..-1 run scoreboard players add charge 
 scoreboard players set @s combo_cooldown 100
 
 #Add to the total score
-scoreboard players operation @s[scores={combo=..10}] combo_calc = @s combo
-scoreboard players operation @s[scores={combo=..10}] combo_calc *= constant.100 combo_calc
-scoreboard players operation @s[scores={combo=..10}] score += @s combo_calc
-scoreboard players add @s[scores={combo=11..}] score 1000
+scoreboard players operation @s combo_calc = @s combo
+scoreboard players operation @s combo_calc *= constant.100 combo_calc
+scoreboard players operation @s score += @s combo_calc
+
+#Max combo
+execute if score @s max_combo < @s combo run scoreboard players operation @s max_combo = @s combo
 
 #Apply corresponding to current combo (if there's an easier way, please tell me)
-effect give @s[scores={combo=2}] speed 5 1 true
-effect give @s[scores={combo=4}] speed 5 2 true
-effect give @s[scores={combo=6}] speed 5 3 true
-effect give @s[scores={combo=8}] speed 5 4 true
+effect give @s[scores={combo=2..3}] speed 5 1 true
+effect give @s[scores={combo=4..5}] speed 5 2 true
+effect give @s[scores={combo=6..7}] speed 5 3 true
+effect give @s[scores={combo=8..9}] speed 5 4 true
 effect give @s[scores={combo=10..}] speed 5 5 true
 effect give @s[scores={combo=10..}] strength 5 4 true
 

@@ -30,10 +30,10 @@ scoreboard players operation @s stored_health = @s health
 execute as @s[tag=cord] run function chaincraft:chainsaw/ability/action
 
 # Drinking blood
-execute as @s[tag=!cord] if predicate chaincraft:is/sneaking unless score @s foodLevel matches 19 run execute as @e[tag=corpse,sort=nearest,limit=1,distance=..2] run function chaincraft:chainsaw/heal
+execute as @s[tag=!cord] if predicate chaincraft:is/sneaking unless score @s foodLevel matches 20.. run execute as @e[tag=corpse,sort=nearest,limit=1,distance=..2] run function chaincraft:chainsaw/heal
 
 # Prevent removing armor
-execute unless data entity @s Inventory[{Slot:103b}] run function chaincraft:chainsaw/get
-execute unless data entity @s Inventory[{Slot:102b}] run function chaincraft:chainsaw/get
-execute unless data entity @s Inventory[{Slot:101b}] run function chaincraft:chainsaw/get
-execute unless data entity @s Inventory[{Slot:100b}] run function chaincraft:chainsaw/get
+execute unless data entity @s[tag=chainsaw] Inventory[{Slot:103b}] run function chaincraft:chainsaw/get
+execute unless data entity @s[tag=chainsaw] Inventory[{Slot:102b}] run function chaincraft:chainsaw/get
+execute unless data entity @s[tag=chainsaw] Inventory[{Slot:101b}] run function chaincraft:chainsaw/get
+execute unless data entity @s[tag=chainsaw] Inventory[{Slot:100b}] run function chaincraft:chainsaw/get

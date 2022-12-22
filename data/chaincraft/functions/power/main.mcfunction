@@ -30,11 +30,17 @@ scoreboard players operation @s stored_health = @s health
 # Used string
 #execute as @s[tag=cord] run function chaincraft:chainsaw/ability/action
 
-# Drinking blood
-execute unless score acc_blood power matches 50.. if block ~ ~-1 ~ red_concrete run function chaincraft:power/absorb_blood
+# Drinking blood unless is at limit
+execute unless score acc_blood power >= strength_2 power if block ~ ~-1 ~ red_concrete run function chaincraft:power/absorb_blood
 
-# Upgrade weapon at 30 blocks
-execute if score acc_blood power matches 30 run function chaincraft:give/power/select_hammer
+# Laugh when reachs strenght_1
+execute if score acc_blood power = strength_1 power run function chaincraft:power/laugh/1
+# Upgrade weapon when reachs "big" blocks
+execute if score acc_blood power = big power run function chaincraft:power/laugh/2
+# Laugh when reachs strenght_2
+execute if score acc_blood power = strength_2 power run function chaincraft:power/laugh/3
+
+execute if score acc_blood power >= max_blood power run function chaincraft:power/release/main
 
 # Prevent removing armor
 #execute unless data entity @s Inventory[{Slot:103b}] run function chaincraft:chainsaw/get

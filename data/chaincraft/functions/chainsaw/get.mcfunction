@@ -1,10 +1,10 @@
 ## Run this everytime the players die
 
-clear @s
-function chaincraft:give/chainsaw/full
 tag @s remove power
 tag @a remove chainsaw
 tag @s add chainsaw
+clear @s
+function chaincraft:give/chainsaw/full
 
 ## Denji is a Berserk. Power is a Glass Canon
 # Speed

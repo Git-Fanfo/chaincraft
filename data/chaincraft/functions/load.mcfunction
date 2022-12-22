@@ -14,7 +14,9 @@ scoreboard objectives add kills totalKillCount
 scoreboard objectives add stored_kills dummy
 scoreboard objectives add foodLevel dummy
 
+# Devils
 scoreboard objectives add chainsaw dummy
+scoreboard objectives add power dummy
 
 scoreboard objectives add timer dummy
 scoreboard objectives add combo totalKillCount

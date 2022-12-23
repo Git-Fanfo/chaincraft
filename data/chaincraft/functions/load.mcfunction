@@ -32,6 +32,8 @@ scoreboard objectives add health health
 scoreboard objectives add stored_health dummy
 scoreboard objectives add combo_calc dummy
 scoreboard players set constant.100 combo_calc 100
+bossbar add timer {"text":"Timer"}
+bossbar set minecraft:timer max 12000
 
 ## Zombies
 # Despawn corpse

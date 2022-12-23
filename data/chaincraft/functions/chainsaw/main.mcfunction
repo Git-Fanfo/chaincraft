@@ -25,6 +25,11 @@ scoreboard players operation @s stored_health -= @s health
 execute if score @s stored_health matches 1.. run function chaincraft:score/reset
 scoreboard players operation @s stored_health = @s health
 
+# Player dies
+execute if score hardcore config matches 1 as @s[scores={dead=1..}] run scoreboard players set timer config 1
+execute if score hardcore config matches 0 as @s[scores={dead=1..}] run scoreboard players remove @s score 30000
+scoreboard players set @s[scores={dead=1..}] dead 0
+
 # Used string
 execute as @s[tag=cord] run function chaincraft:chainsaw/ability/action
 

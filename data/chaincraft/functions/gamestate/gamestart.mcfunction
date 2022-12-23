@@ -1,3 +1,4 @@
+###coords###
 summon zombie 73 4 -90
 summon zombie 73 4 -91
 summon zombie 73 4 -92

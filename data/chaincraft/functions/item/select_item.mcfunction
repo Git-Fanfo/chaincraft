@@ -13,3 +13,5 @@ execute as @s[nbt={Item:{id:"minecraft:cyan_bed"}}] run function chaincraft:zomb
 execute as @s[nbt={Item:{id:"minecraft:purple_bed"}}] run function chaincraft:zombie/strength/summon_corpse
 
 execute if predicate chaincraft:has_tag/item/chainsaw run function chaincraft:item/chainsaw
+
+execute if predicate chaincraft:has_tag/item/power run function chaincraft:item/power

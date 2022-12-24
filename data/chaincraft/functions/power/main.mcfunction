@@ -40,7 +40,5 @@ execute if score acc_blood power = strength_2 power run function chaincraft:powe
 execute if score acc_blood power >= max_blood power run function chaincraft:power/release/main
 
 # Prevent removing armor
-#execute unless data entity @s Inventory[{Slot:103b}] run function chaincraft:chainsaw/get
-#execute unless data entity @s Inventory[{Slot:102b}] run function chaincraft:chainsaw/get
-#execute unless data entity @s Inventory[{Slot:101b}] run function chaincraft:chainsaw/get
-#execute unless data entity @s Inventory[{Slot:100b}] run function chaincraft:chainsaw/get
+execute unless data entity @s Inventory[{Slot:103b}] run function chaincraft:power/get
+execute unless data entity @s Inventory[{Slot:102b}] run function chaincraft:power/get

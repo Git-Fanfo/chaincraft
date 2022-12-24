@@ -10,7 +10,7 @@ execute if score tick timer matches 20.. run scoreboard players set run_second t
 
 execute as @e at @s run function chaincraft:select_entity
 
-execute if score gamestate config matches 1 run function chaincraft:gamestate/intro
+execute if score intro timer matches 0.. run function chaincraft:gamestate/intro/main
 execute if score gamestate config matches 2 run function chaincraft:gamestate/game
 
 execute if score tick timer matches 20.. run scoreboard players set tick timer 0

@@ -18,3 +18,4 @@ kill @s[type=experience_orb]
 ## Apply motion
 execute as @s[tag=not_mov] rotated as @p run function chaincraft:controller/apply_motion/select_motion
 execute as @s[tag=forehead] run function chaincraft:chainsaw/ability/range
+execute as @s[tag=sweep] run function chaincraft:power/sweep/range

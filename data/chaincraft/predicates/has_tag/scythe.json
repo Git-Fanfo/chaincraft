@@ -1,0 +1,8 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{SelectedItem:{id:\"minecraft:netherite_sword\",tag:{scythe:1b}}}"
+    }
+  }
+  

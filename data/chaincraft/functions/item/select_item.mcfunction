@@ -1,4 +1,4 @@
-execute if score epicfights config matches 1 as @s[nbt={Item:{id:"epicfight:skillbook"}}] run kill
+execute as @s[nbt={Item:{id:"epicfight:skillbook"}}] run kill
 
 execute as @s[nbt={Item:{id:"minecraft:white_bed"}}] run function chaincraft:zombie/crowd/summon_corpse/1
 execute as @s[nbt={Item:{id:"minecraft:orange_bed"}}] run function chaincraft:zombie/crowd/summon_corpse/2

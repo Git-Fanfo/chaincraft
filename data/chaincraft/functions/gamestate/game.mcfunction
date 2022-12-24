@@ -5,9 +5,7 @@ execute if score run_second timer matches 1.. run scoreboard players remove time
 execute if score timer_seconds config matches -1 run scoreboard players remove timer_minutes config 1
 execute if score timer_seconds config matches -1 run scoreboard players set timer_seconds config 59
 
-execute if score timer config matches 9000..12000 if score zombie_count config matches ..10 run function chaincraft:gamestate/wave/1
-execute if score timer config matches 6000..9000 if score zombie_count config matches ..15 run function chaincraft:gamestate/wave/2
-execute if score timer config matches 3000..6000 if score zombie_count config matches ..20 run function chaincraft:gamestate/wave/3
-execute if score timer config matches 0..3000 if score zombie_count config matches ..25 run function chaincraft:gamestate/wave/4
+execute if score player_count config matches 1 run function chaincraft:gamestate/singlesummon
+execute if score player_count config matches 2 run function chaincraft:gamestate/multisummon
 
 execute if score timer config matches 0 run function chaincraft:gamestate/end

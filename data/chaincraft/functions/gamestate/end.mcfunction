@@ -12,3 +12,4 @@ fill 77 3 -101 39 3 -50 gray_concrete replace red_concrete
 
 scoreboard objectives setdisplay sidebar
 bossbar set minecraft:timer visible false
+scoreboard players set player_count config 0

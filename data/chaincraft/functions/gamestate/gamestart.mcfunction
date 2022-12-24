@@ -38,3 +38,5 @@ tp @a[tag=power] 75 4 -59 135 0
 spawnpoint @a 72 4 -62 158
 
 bossbar set minecraft:timer players @a
+
+scoreboard objectives setdisplay sidebar score

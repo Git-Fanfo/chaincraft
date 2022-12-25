@@ -29,6 +29,7 @@ effect give @s[scores={combo=10..}] speed 5 5 true
 effect give @s[scores={combo=10..}] strength 5 4 true
 
 #Combo graphics
-title @s[scores={combo=..9}] title {"score":{"name":"@s","objective":"combo"},"color":"gold"}
-title @s[scores={combo=10..}] title {"score":{"name":"@s","objective":"combo"},"color":"red"}
+title @s[scores={combo=2..}] title [{"text":"BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA","font":"minecraft:score"},{"score":{"name":"@s","objective":"combo"},"font":"minecraft:score"}]
+#title @s[scores={combo=..9}] title {"score":{"name":"@s","objective":"combo"},"color":"gold"}
+#title @s[scores={combo=10..}] title {"score":{"name":"@s","objective":"combo"},"color":"red"}
 ##Colour will be used to show which abilities can be used.

@@ -5,6 +5,11 @@ execute if score player_count config matches 2 if score @a[tag=chainsaw,limit=1]
 execute if score player_count config matches 2 if score @a[tag=chainsaw,limit=1] score = @a[tag=power,limit=1] score run say Chainsaw Man and Power tied!
 kill @e[tag=zombie]
 kill @e[tag=zombie_devil]
+
+# Remove devils
+execute as @a[tag=chainsaw] run function chaincraft:chainsaw/remove
+execute as @a[tag=power] run function chaincraft:power/remove
+
 spawnpoint @a 19 4 -68 90
 ###coords###
 fill 77 3 -101 39 3 -50 gray_concrete replace red_concrete

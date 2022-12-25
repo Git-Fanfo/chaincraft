@@ -32,9 +32,6 @@ scoreboard players set gametime timer 12000
 scoreboard players set timer_minutes config 10
 scoreboard players set timer_seconds config 0
 
-tp @a[tag=chainsaw] 71.5 4 -65 180 0
-tp @a[tag=power] 75 4 -59 135 0
-
 spawnpoint @a 72 4 -62 158
 
 bossbar set minecraft:timer players @a

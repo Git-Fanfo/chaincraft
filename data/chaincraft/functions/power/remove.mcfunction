@@ -1,4 +1,4 @@
-tag @s remove chainsaw
+tag @s remove power
 effect clear @s
 clear @s
 

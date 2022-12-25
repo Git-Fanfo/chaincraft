@@ -1,4 +1,4 @@
-execute if score intro timer matches 620 as @a at @s run playsound minecraft:chaincraft.music.hawatari_nioku_centi voice @s
+execute if score intro timer matches 620 as @a at @s run function chaincraft:music/1
 
 execute if score intro timer matches 620 as @a run function chaincraft:gamestate/intro/blank
 

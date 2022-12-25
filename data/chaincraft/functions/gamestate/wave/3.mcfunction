@@ -1,6 +1,6 @@
-###coords###
-execute if predicate chaincraft:chance/20 if score zombie_count config matches ..20 positioned 71 4 -92 run function chaincraft:gamestate/wave/3summon
-execute if predicate chaincraft:chance/20 if score zombie_count config matches ..20 positioned 48 4 -87 run function chaincraft:gamestate/wave/3summon
-execute if predicate chaincraft:chance/20 if score zombie_count config matches ..20 positioned 40 11 -76 run function chaincraft:gamestate/wave/3summon
-execute if predicate chaincraft:chance/20 if score zombie_count config matches ..20 positioned 72 4 -64 run function chaincraft:gamestate/wave/3summon
-execute if predicate chaincraft:chance/20 if score zombie_count config matches ..20 positioned 55 10 -88 run function chaincraft:gamestate/wave/3summon
+###fixed coords###
+execute if predicate chaincraft:chance/20 if score zombie_count config matches ..20 positioned 60 4 -82 run function chaincraft:gamestate/wave/3summon
+execute if predicate chaincraft:chance/20 if score zombie_count config matches ..20 positioned 76 4 -62 run function chaincraft:gamestate/wave/3summon
+execute if predicate chaincraft:chance/20 if score zombie_count config matches ..20 positioned 67 5 -89 run function chaincraft:gamestate/wave/3summon
+execute if predicate chaincraft:chance/20 if score zombie_count config matches ..20 positioned 56 14 -71 run function chaincraft:gamestate/wave/3summon
+execute if predicate chaincraft:chance/20 if score zombie_count config matches ..20 positioned 74 10 -107 run function chaincraft:gamestate/wave/3summon

@@ -18,9 +18,9 @@ execute if score intro timer matches 220 as @a run function chaincraft:gamestate
 execute if score intro timer matches 215 as @a[tag=intro_chain] run function chaincraft:chainsaw/get
 execute if score intro timer matches 215 as @a[tag=intro_power] run function chaincraft:power/get
 
-execute if score intro timer matches 215 as @a[tag=intro_chain] run tp 73.24 5.00 -60
-execute if score intro timer matches 215 as @a[tag=intro_power] run tp 73.24 6 -60
-
+execute if score intro timer matches 215 as @a[tag=intro_chain] run tp @s 61 5 -107.5 0 0
+execute if score intro timer matches 215 as @a[tag=intro_power] run tp @s 59 16.5 -50 180 15
+##Fixed Coords##
 execute if score intro timer matches 140 as @a run function chaincraft:gamestate/intro/credit
 execute if score intro timer matches 80 as @a run function chaincraft:gamestate/intro/music
 

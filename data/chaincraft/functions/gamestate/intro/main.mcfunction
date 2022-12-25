@@ -29,7 +29,5 @@ execute if score intro timer matches 17 as @a[tag=intro_power] run function chai
 
 execute if score intro timer matches 215 run function chaincraft:gamestate/gamestart
 
-execute if score intro timer matches 1 run tag @a[tag=intro_chain] remove intro_chain
-execute if score intro timer matches 1 run tag @a[tag=intro_power] remove intro_power
 
 scoreboard players remove intro timer 1

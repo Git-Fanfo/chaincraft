@@ -1,4 +1,5 @@
 execute if score intro timer matches 620 run function chaincraft:music/1
+execute if score intro timer matches 620 run scoreboard players set now music 1
 
 execute if score intro timer matches 620 as @a run function chaincraft:gamestate/intro/blank
 

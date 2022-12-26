@@ -4,6 +4,7 @@ say TODO: spawn first corpse and after some time set model
 
 gamerule mobGriefing false
 gamerule fallDamage false
+gamerule doImmediateRespawn true
 
 # Initial config
 scoreboard objectives add config dummy

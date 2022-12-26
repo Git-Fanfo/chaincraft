@@ -1,2 +1,2 @@
-playsound minecraft:chaincraft.music.svchv_mix voice @a
+execute as @a at @s run playsound minecraft:chaincraft.music.svchv_mix voice @s
 scoreboard players set timer music 4160

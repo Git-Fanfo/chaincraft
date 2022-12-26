@@ -27,11 +27,10 @@ scoreboard players operation @s stored_health = @s health
 # Player dies
 execute as @s[scores={dead=1..}] run function chaincraft:power/death
 
-# Used string
-#execute as @s[tag=cord] run function chaincraft:chainsaw/ability/action
-
 # Drinking blood unless is at limit
-execute unless score acc_blood power >= strength_2 power if block ~ ~-1 ~ red_concrete run function chaincraft:power/absorb_blood
+#execute unless score acc_blood power >= strength_2 power if block ~ ~-1 ~ red_concrete run function chaincraft:power/absorb_blood
+execute if block ~ ~-1 ~ red_concrete run function chaincraft:power/absorb_blood
+
 
 # Laugh when reachs strenght_1
 execute if score acc_blood power = strength_1 power run function chaincraft:power/laugh/1

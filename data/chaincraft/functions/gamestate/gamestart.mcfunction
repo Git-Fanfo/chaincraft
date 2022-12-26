@@ -28,5 +28,6 @@ spawnpoint @a[tag=intro_chain] 61 5 -107 0
 spawnpoint @a[tag=intro_power] 59 17 -50 180
 
 bossbar set minecraft:timer players @a
+bossbar set minecraft:timer visible true
 
 scoreboard objectives setdisplay sidebar score

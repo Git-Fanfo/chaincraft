@@ -31,7 +31,8 @@ scoreboard objectives add music dummy
 scoreboard objectives add timer dummy
 scoreboard objectives add combo totalKillCount
 scoreboard objectives add max_combo dummy
-scoreboard objectives add score dummy
+scoreboard objectives add pb dummy "Personal Bests"
+scoreboard objectives add score dummy "Score"
 scoreboard objectives add combo_cooldown dummy
 scoreboard objectives add health health
 scoreboard objectives add stored_health dummy

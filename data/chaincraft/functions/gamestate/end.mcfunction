@@ -18,6 +18,9 @@ fill 77 3 -101 39 3 -50 gray_concrete replace red_concrete
 
 scoreboard players set timer music -1
 stopsound @a voice
-scoreboard objectives setdisplay sidebar
+scoreboard objectives setdisplay sidebar pb
+execute as @a unless score @s pb matches 1.. run scoreboard players set @s pb 0
+execute as @a if score @s score > @s pb run say Personal Best!
+execute as @a if score @s score > @s pb run scoreboard players operation @s pb = @s score
 bossbar set minecraft:timer visible false
 scoreboard players set player_count config 0

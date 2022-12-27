@@ -16,6 +16,10 @@ execute unless score light config matches 0.. run scoreboard players set light c
 scoreboard objectives add using_carrot minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add kills totalKillCount
 scoreboard objectives add stored_kills dummy
+scoreboard objectives add zombie_kills minecraft.killed:minecraft.zombie
+scoreboard objectives add drowned_kills minecraft.killed:minecraft.drowned
+scoreboard objectives add husk_kills minecraft.killed:minecraft.husk
+scoreboard objectives add golem_kills minecraft.killed:minecraft.iron_golem
 scoreboard objectives add foodLevel dummy
 scoreboard objectives add push dummy
 
@@ -39,6 +43,9 @@ scoreboard objectives add health health
 scoreboard objectives add stored_health dummy
 scoreboard objectives add combo_calc dummy
 scoreboard players set constant.100 combo_calc 100
+scoreboard players set constant.200 combo_calc 200
+scoreboard players set constant.300 combo_calc 300
+scoreboard players set constant.500 combo_calc 500
 bossbar add timer {"translate":"console.feedback.5"}
 bossbar set minecraft:timer max 12000
 bossbar set minecraft:timer color purple

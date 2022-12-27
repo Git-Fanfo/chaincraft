@@ -11,10 +11,10 @@ execute if score idle chainsaw matches 80 run playsound minecraft:chaincraft.cha
 scoreboard players remove idle chainsaw 1
 
 # Chainsaw killed something
-scoreboard players operation @s stored_kills -= @s kills
-## Here
-execute if score @s stored_kills matches ..-1 run function chaincraft:score/trigger
-scoreboard players operation @s stored_kills = @s kills
+execute if score @s zombie_kills matches 1.. run function chaincraft:score/zombie
+execute if score @s drowned_kills matches 1.. run function chaincraft:score/drowned
+execute if score @s husk_kills matches 1.. run function chaincraft:score/husk
+execute if score @s golem_kills matches 1.. run function chaincraft:score/golem
 
 # Prevent score go below 0
 execute if score @s score matches ..-1 run scoreboard players set @s score 0

@@ -5,17 +5,12 @@
 #   > chaincraft:player/main
 
 # Sfx and zombie_devil system
-execute as @s[tag=chainsaw] if score @s stored_kills matches ..-1 run playsound minecraft:chaincraft.chainsaw.cut record @a ~ ~ ~ 1 1.2
-execute if score @s stored_kills matches ..-1 run playsound minecraft:chaincraft.power.cut player @a ~ ~ ~ 1 1
-execute if score @s stored_kills matches ..-1 run scoreboard players add charge zombie_devil 1
+execute as @s[tag=chainsaw] run playsound minecraft:chaincraft.chainsaw.cut record @a ~ ~ ~ 1 1.2
+playsound minecraft:chaincraft.power.cut player @a ~ ~ ~ 1 1
+scoreboard players add charge zombie_devil 1
 
 #Reset timer
 scoreboard players set @s combo_cooldown 100
-
-#Add to the total score
-scoreboard players operation @s combo_calc = @s combo
-scoreboard players operation @s combo_calc *= constant.100 combo_calc
-scoreboard players operation @s score += @s combo_calc
 
 #Max combo
 execute if score @s max_combo < @s combo run scoreboard players operation @s max_combo = @s combo

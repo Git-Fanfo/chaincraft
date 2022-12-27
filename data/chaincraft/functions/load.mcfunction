@@ -15,7 +15,6 @@ execute unless score light config matches 0.. run scoreboard players set light c
 
 scoreboard objectives add using_carrot minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add kills totalKillCount
-scoreboard objectives add stored_kills dummy
 scoreboard objectives add zombie_kills minecraft.killed:minecraft.zombie
 scoreboard objectives add drowned_kills minecraft.killed:minecraft.drowned
 scoreboard objectives add husk_kills minecraft.killed:minecraft.husk

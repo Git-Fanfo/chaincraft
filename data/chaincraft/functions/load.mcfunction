@@ -29,7 +29,7 @@ scoreboard objectives add power dummy
 scoreboard players set strength_1 power 10
 scoreboard players set big power 30
 scoreboard players set strength_2 power 70
-scoreboard players set max_blood power 90
+scoreboard players set max_blood power 100
 
 scoreboard objectives add dead deathCount
 scoreboard objectives add music dummy

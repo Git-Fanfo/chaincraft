@@ -19,10 +19,10 @@ execute if score @s score matches ..-1 run scoreboard players set @s score 0
 scoreboard players remove @s[scores={combo_cooldown=1..}] combo_cooldown 1
 scoreboard players set @s[scores={combo=1..,combo_cooldown=0}] combo 0
 
-# Take damage
-scoreboard players operation @s stored_health -= @s health
-execute if score @s stored_health matches 1.. run function chaincraft:score/reset
-scoreboard players operation @s stored_health = @s health
+## Take damage
+#scoreboard players operation @s stored_health -= @s health
+#execute if score @s stored_health matches 1.. run function chaincraft:score/reset
+#scoreboard players operation @s stored_health = @s health
 
 # Player dies
 execute as @s[scores={dead=1..}] run function chaincraft:power/death

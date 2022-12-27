@@ -1,5 +1,6 @@
 execute store result bossbar minecraft:timer value run scoreboard players remove gametime timer 1
-bossbar set minecraft:timer name ["",{"score":{"name":"timer_minutes","objective":"config"}},{"text":":"},{"score":{"name":"timer_seconds","objective":"config"}}]
+execute unless score timer_seconds config matches 10.. run bossbar set minecraft:timer name ["",{"score":{"name":"timer_minutes","objective":"config"}},{"text":":0"},{"score":{"name":"timer_seconds","objective":"config"}}]
+execute if score timer_seconds config matches 10.. run bossbar set minecraft:timer name ["",{"score":{"name":"timer_minutes","objective":"config"}},{"text":":"},{"score":{"name":"timer_seconds","objective":"config"}}]
 execute store result score zombie_count config run execute if entity @e[tag=zombie]
 execute if score run_second timer matches 1.. run scoreboard players remove timer_seconds config 1
 execute if score timer_seconds config matches -1 run scoreboard players remove timer_minutes config 1

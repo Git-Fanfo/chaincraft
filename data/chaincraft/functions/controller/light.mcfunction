@@ -12,10 +12,67 @@ execute if predicate chaincraft:chance/80 run setblock 64 10 -92 minecraft:light
 
 ## Facing from south to north, from east to west
 ## Bulbs
+## First
+execute if predicate chaincraft:chance/90 run setblock 65 9 -108 minecraft:end_rod[facing=south]
+execute if predicate chaincraft:chance/10 run setblock 65 9 -108 minecraft:tripwire_hook[facing=south]
+#execute if predicate chaincraft:chance/90 run setblock 54 9 -108 minecraft:end_rod[facing=south]
+#execute if predicate chaincraft:chance/10 run setblock 54 9 -108 minecraft:tripwire_hook[facing=south]
+#execute if predicate chaincraft:chance/90 run setblock 52 9 -108 minecraft:end_rod[facing=south]
+#execute if predicate chaincraft:chance/10 run setblock 52 9 -108 minecraft:tripwire_hook[facing=south]
+execute if predicate chaincraft:chance/90 run setblock 40 9 -108 minecraft:end_rod[facing=south]
+execute if predicate chaincraft:chance/10 run setblock 40 9 -108 minecraft:tripwire_hook[facing=south]
+
+#execute if predicate chaincraft:chance/90 run setblock 80 9 -102 minecraft:end_rod[facing=west]
+#execute if predicate chaincraft:chance/10 run setblock 80 9 -102 minecraft:tripwire_hook[facing=west]
+
+#execute if predicate chaincraft:chance/90 run setblock 80 9 -91 minecraft:end_rod[facing=west]
+#execute if predicate chaincraft:chance/10 run setblock 80 9 -91 minecraft:tripwire_hook[facing=west]
+#execute if predicate chaincraft:chance/90 run setblock 39 9 -91 minecraft:end_rod[facing=east]
+#execute if predicate chaincraft:chance/10 run setblock 39 9 -91 minecraft:tripwire_hook[facing=east]
+execute if predicate chaincraft:chance/90 run setblock 80 9 -84 minecraft:end_rod[facing=west]
+execute if predicate chaincraft:chance/10 run setblock 80 9 -84 minecraft:tripwire_hook[facing=west]
+#execute if predicate chaincraft:chance/90 run setblock 39 9 -84 minecraft:end_rod[facing=east]
+#execute if predicate chaincraft:chance/10 run setblock 39 9 -84 minecraft:tripwire_hook[facing=east]
+execute if predicate chaincraft:chance/90 run setblock 39 9 -74 minecraft:end_rod[facing=east]
+execute if predicate chaincraft:chance/10 run setblock 39 9 -74 minecraft:tripwire_hook[facing=east]
 
 
+execute if predicate chaincraft:chance/90 run setblock 80 9 -67 minecraft:end_rod[facing=west]
+execute if predicate chaincraft:chance/10 run setblock 80 9 -67 minecraft:tripwire_hook[facing=west]
+#execute if predicate chaincraft:chance/90 run setblock 39 9 -67 minecraft:end_rod[facing=east]
+#execute if predicate chaincraft:chance/10 run setblock 39 9 -67 minecraft:tripwire_hook[facing=east]
+#execute if predicate chaincraft:chance/90 run setblock 80 9 -56 minecraft:end_rod[facing=west]
+#execute if predicate chaincraft:chance/10 run setblock 80 9 -56 minecraft:tripwire_hook[facing=west]
+execute if predicate chaincraft:chance/90 run setblock 39 9 -56 minecraft:end_rod[facing=east]
+execute if predicate chaincraft:chance/10 run setblock 39 9 -56 minecraft:tripwire_hook[facing=east]
 
+#execute if predicate chaincraft:chance/90 run setblock 79 9 -50 minecraft:end_rod[facing=north]
+#execute if predicate chaincraft:chance/10 run setblock 79 9 -50 minecraft:tripwire_hook[facing=north]
+execute if predicate chaincraft:chance/90 run setblock 67 9 -50 minecraft:end_rod[facing=north]
+execute if predicate chaincraft:chance/10 run setblock 67 9 -50 minecraft:tripwire_hook[facing=north]
+#execute if predicate chaincraft:chance/90 run setblock 52 9 -50 minecraft:end_rod[facing=north]
+#execute if predicate chaincraft:chance/10 run setblock 52 9 -50 minecraft:tripwire_hook[facing=north]
 
+## Second
+#execute if predicate chaincraft:chance/90 run setblock 65 18 -108 minecraft:end_rod[facing=south]
+#execute if predicate chaincraft:chance/10 run setblock 65 18 -108 minecraft:tripwire_hook[facing=south]
+execute if predicate chaincraft:chance/90 run setblock 54 18 -108 minecraft:end_rod[facing=south]
+execute if predicate chaincraft:chance/10 run setblock 54 18 -108 minecraft:tripwire_hook[facing=south]
+
+#execute if predicate chaincraft:chance/90 run setblock 39 19 -100 minecraft:end_rod[facing=east]
+#execute if predicate chaincraft:chance/10 run setblock 39 19 -100 minecraft:tripwire_hook[facing=east]
+execute if predicate chaincraft:chance/90 run setblock 39 19 -82 minecraft:end_rod[facing=east]
+execute if predicate chaincraft:chance/10 run setblock 39 19 -82 minecraft:tripwire_hook[facing=east]
+#execute if predicate chaincraft:chance/90 run setblock 39 19 -56 minecraft:end_rod[facing=east]
+#execute if predicate chaincraft:chance/10 run setblock 39 19 -56 minecraft:tripwire_hook[facing=east]
+
+execute if predicate chaincraft:chance/90 run setblock 79 18 -50 minecraft:end_rod[facing=north]
+execute if predicate chaincraft:chance/10 run setblock 79 18 -50 minecraft:tripwire_hook[facing=north]
+execute if predicate chaincraft:chance/90 run setblock 54 18 -50 minecraft:end_rod[facing=north]
+execute if predicate chaincraft:chance/10 run setblock 54 18 -50 minecraft:tripwire_hook[facing=north]
+
+#execute if predicate chaincraft:chance/90 run setblock 80 19 -65 minecraft:end_rod[facing=west]
+#execute if predicate chaincraft:chance/10 run setblock 80 19 -65 minecraft:tripwire_hook[facing=west]
 ## Long lights
 ## 1
 execute if predicate chaincraft:chance/90 run fill 75 32 -101 72 32 -101 minecraft:shroomlight replace minecraft:light_gray_stained_glass

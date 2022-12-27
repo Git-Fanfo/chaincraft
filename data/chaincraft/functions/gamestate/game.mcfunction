@@ -11,7 +11,4 @@ execute if score player_count config matches 2 run function chaincraft:gamestate
 execute if score gametime timer matches 0 run function chaincraft:gamestate/end
 
 #light
-#execute if score tick timer matches 5 run function chaincraft:controller/light
-#execute if score tick timer matches 10 run function chaincraft:controller/light
-#execute if score tick timer matches 15 run function chaincraft:controller/light
-#execute if score tick timer matches 20 run function chaincraft:controller/light
+execute if score light config matches 1 run function chaincraft:controller/config_light

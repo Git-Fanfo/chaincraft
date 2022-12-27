@@ -10,7 +10,7 @@ playsound minecraft:chaincraft.power.cut player @a ~ ~ ~ 1 1
 scoreboard players add charge zombie_devil 1
 
 #Reset timer
-scoreboard players set @s combo_cooldown 80
+scoreboard players set @s combo_cooldown 90
 
 #Max combo
 execute if score @s max_combo < @s combo run scoreboard players operation @s max_combo = @s combo

@@ -8,7 +8,7 @@ execute if score run_second timer matches 1.. run function chaincraft:chainsaw/a
 # Feedback
 execute as @s[tag=!heal_cord] if predicate chaincraft:is/sneaking run function chaincraft:chainsaw/ability/cant_heal
 
-execute anchored eyes positioned ^ ^ ^1 run summon arrow ~ ~ ~ {damage:8d,Tags:["not_mov","forehead"],SoundEvent:"entity.generic.explode"}
+execute anchored eyes positioned ^ ^ ^1 run summon arrow ~ ~ ~ {damage:7d,Tags:["not_mov","forehead"],SoundEvent:"entity.generic.explode"}
 
 data modify entity @e[type=arrow, sort=nearest, limit=1, tag=forehead, tag=not_mov] Owner set from entity @s UUID
 

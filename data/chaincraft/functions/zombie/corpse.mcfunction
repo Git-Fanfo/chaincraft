@@ -13,3 +13,5 @@ execute if score @s despawn matches ..0 run kill
 execute if entity @s[tag=eaten] run scoreboard players remove @s despawn 150
 # Remove being eaten
 tag @s remove eaten
+
+execute as @s[nbt={OnGround:1b}] unless block ~ ~-0.01 ~ air run data modify entity @s Marker set value 1b

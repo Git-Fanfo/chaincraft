@@ -11,6 +11,7 @@ scoreboard objectives add config dummy
 execute unless score epicfights config matches 0.. run scoreboard players set epicfights config 0
 execute unless score hardcore config matches 0.. run scoreboard players set hardcore config 0
 execute unless score skip config matches 0.. run scoreboard players set skip config 0
+execute unless score light config matches 0.. run scoreboard players set light config 1
 
 scoreboard objectives add using_carrot minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add kills totalKillCount
@@ -38,8 +39,9 @@ scoreboard objectives add health health
 scoreboard objectives add stored_health dummy
 scoreboard objectives add combo_calc dummy
 scoreboard players set constant.100 combo_calc 100
-bossbar add timer {"text":"Timer"}
+bossbar add timer {"translate":"console.feedback.5"}
 bossbar set minecraft:timer max 12000
+bossbar set minecraft:timer color purple
 
 ## Zombies
 # Despawn corpse

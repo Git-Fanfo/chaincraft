@@ -1,0 +1,11 @@
+execute if score tick timer matches 0 run function chaincraft:controller/light
+execute if score tick timer matches 2 run function chaincraft:controller/light
+execute if score tick timer matches 4 run function chaincraft:controller/light
+execute if score tick timer matches 6 run function chaincraft:controller/light
+execute if score tick timer matches 8 run function chaincraft:controller/light
+execute if score tick timer matches 10 run function chaincraft:controller/light
+execute if score tick timer matches 12 run function chaincraft:controller/light
+execute if score tick timer matches 14 run function chaincraft:controller/light
+execute if score tick timer matches 16 run function chaincraft:controller/light
+execute if score tick timer matches 18 run function chaincraft:controller/light
+execute if score tick timer matches 20 run function chaincraft:controller/light

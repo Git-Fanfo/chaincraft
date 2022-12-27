@@ -1,5 +1,5 @@
 scoreboard players set gamestate config 2
-execute as @a run tellraw @s ["",{"translate":"stats","bold":true,"underlined":true},"\n",{"translate":"max_combo"},": ",{"score":{"name":"@s","objective":"max_combo"},"bold":true},"\n",{"translate":"score"},": ",{"score":{"name":"@s","objective":"score"},"bold":true}]
+execute as @a run tellraw @s ["",{"translate":"stats","bold":true,"underlined":true},"\n",{"translate":"max_combo"},": ",{"score":{"name":"@s","objective":"max_combo"},"bold":true},"\n",{"translate":"score"},": ",{"score":{"name":"@s","objective":"score"},"bold":true},"\n",{"translate":"deaths"},": ",{"score":{"name":"@s","objective":"deathCount"},"bold":true},"\n",{"translate":"totalkills"},": ",{"score":{"name":"@s","objective":"kills"},"bold":true}]
 execute if score player_count config matches 2 if score @a[tag=chainsaw,limit=1] score > @a[tag=power,limit=1] score run say Chainsaw Man won!
 execute if score player_count config matches 2 if score @a[tag=chainsaw,limit=1] score < @a[tag=power,limit=1] score run say Power won!
 execute if score player_count config matches 2 if score @a[tag=chainsaw,limit=1] score = @a[tag=power,limit=1] score run say Chainsaw Man and Power tied!

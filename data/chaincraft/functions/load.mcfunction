@@ -31,6 +31,7 @@ scoreboard players set strength_2 power 70
 scoreboard players set max_blood power 100
 
 scoreboard objectives add dead deathCount
+scoreboard objectives add deathCount deathCount
 scoreboard objectives add music dummy
 scoreboard objectives add timer dummy
 scoreboard objectives add combo totalKillCount

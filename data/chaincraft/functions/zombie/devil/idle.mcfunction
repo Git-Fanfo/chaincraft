@@ -16,4 +16,6 @@ execute if score idle zombie_devil matches 12 run data merge entity @s {HandItem
 execute if score idle zombie_devil matches 8 run data merge entity @s {HandItems:[{id:'minecraft:feather',Count:1b,tag:{CustomModelData:35}},{}]}
 execute if score idle zombie_devil matches 4 run data merge entity @s {HandItems:[{id:'minecraft:feather',Count:1b,tag:{CustomModelData:36}},{}]}
 
+execute if score idle zombie_devil matches 40 if predicate chaincraft:chance/30 run function chaincraft:zombie/devil/sound/idle
+
 scoreboard players remove idle zombie_devil 1

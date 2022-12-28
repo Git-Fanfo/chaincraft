@@ -7,4 +7,5 @@ execute if score attack zombie_devil matches 2 run data merge entity @s {HandIte
 
 execute if score attack zombie_devil matches 1 run tag @s remove attack
 
+execute if score attack zombie_devil matches 11 run function chaincraft:zombie/devil/sound/attack
 scoreboard players remove attack zombie_devil 1

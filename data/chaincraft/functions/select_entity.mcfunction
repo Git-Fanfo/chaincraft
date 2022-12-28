@@ -11,7 +11,7 @@ execute as @s[type=zombie] run function chaincraft:zombie/crowd/main
 execute as @s[type=husk] run function chaincraft:zombie/bloody/main
 execute as @s[type=drowned] run function chaincraft:zombie/jump/main
 execute as @s[type=iron_golem] run function chaincraft:zombie/strength/main
-execute as @s[tag=zombie_devil] run function chaincraft:zombie/devil/main
+execute as @s[tag=zombie_devil,tag=!dead] run function chaincraft:zombie/devil/main
 execute as @s[tag=weak_point] run function chaincraft:zombie/devil/weak_point
 kill @s[type=experience_orb]
 

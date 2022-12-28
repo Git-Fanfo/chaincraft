@@ -30,7 +30,7 @@ execute as @s[scores={dead=1..}] run function chaincraft:power/death
 # Drinking blood unless is at limit
 #execute unless score acc_blood power >= strength_2 power if block ~ ~-1 ~ red_concrete run function chaincraft:power/absorb_blood
 execute if block ~ ~-1 ~ red_concrete run function chaincraft:power/absorb_blood
-title @s actionbar {"score":{"name":"acc_blood","objective":"power"},"color":"red"}
+title @s actionbar {"score":{"name":"acc_blood","objective":"power"},"color":"dark_red"}
 
 
 # Laugh when reachs strenght_1

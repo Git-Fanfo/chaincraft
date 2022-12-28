@@ -10,8 +10,9 @@ kill @e[tag=zombie_devil]
 execute as @a[tag=chainsaw] run function chaincraft:chainsaw/remove
 execute as @a[tag=power] run function chaincraft:power/remove
 
-spawnpoint @a 19 4 -68 90
-tp @a 19 4 -68 90 ~
+spawnpoint @a 17 4 -122 90
+tp @a 17 4 -122 0 ~
+##Spawn Coords##
 
 function chaincraft:gamestate/celebration
 

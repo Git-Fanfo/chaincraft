@@ -7,6 +7,8 @@ execute if score skip config matches 0 if score player_count config matches 1.. 
 execute if score skip config matches 0 if score player_count config matches 1.. run scoreboard players set gamestate config 1
 scoreboard players set @a score 0
 scoreboard players set @a max_combo 0
+scoreboard players set @a kills 0
+scoreboard players set @a deathCount 0
 
 execute unless score player_count config matches 1.. run tellraw @a {"translate":"console.feedback.1","color":"dark_red"}
 execute if score skip config matches 1 if score player_count config matches 1.. run function chaincraft:gamestate/start/skip

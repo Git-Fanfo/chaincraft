@@ -14,7 +14,7 @@ spawnpoint @a 17 4 -122 90
 tp @a 17 4 -122 0 ~
 ##Spawn Coords##
 
-function chaincraft:gamestate/celebration
+execute positioned 19 4 -68 run function chaincraft:gamestate/celebration
 
 ###coords###
 fill 77 3 -101 39 3 -50 gray_concrete replace red_concrete

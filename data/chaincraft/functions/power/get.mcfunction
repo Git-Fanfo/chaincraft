@@ -5,6 +5,7 @@ tag @a remove power
 tag @s add power
 clear @s
 function chaincraft:give/power/full
+team join devil @s
 
 ## Denji is a Berserk. Power is a Glass Canon
 # Speed

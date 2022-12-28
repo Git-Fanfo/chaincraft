@@ -1,10 +1,9 @@
-say hi! Blue!
-say Hello
-say TODO: spawn first corpse and after some time set model
+tellraw @a {"text": "Chainsaw Craft","color": "gold"}
 
 gamerule mobGriefing false
 gamerule fallDamage false
 gamerule doImmediateRespawn true
+gamerule showDeathMessages false
 
 # Initial config
 scoreboard objectives add config dummy
@@ -70,3 +69,7 @@ scoreboard objectives add motion_z1 dummy
 
 team add zombie
 team modify zombie collisionRule always
+team add devil
+team modify devil friendlyFire false
+team modify devil seeFriendlyInvisibles false
+team modify devil color dark_red

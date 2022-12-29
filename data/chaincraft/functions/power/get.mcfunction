@@ -4,6 +4,7 @@ tag @s remove chainsaw
 tag @a remove power
 tag @s add power
 clear @s
+effect clear @s saturation
 function chaincraft:give/power/full
 team join devil @s
 

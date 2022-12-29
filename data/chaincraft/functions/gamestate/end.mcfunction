@@ -12,7 +12,7 @@ execute as @a[tag=power] run function chaincraft:power/remove
 
 spawnpoint @a 138 4 -29 90
 tp @a 138 4 -29 90 ~
-
+effect give @a saturation 9999 255 true
 execute positioned 138 4 -29 run function chaincraft:gamestate/celebration
 
 ###coords###

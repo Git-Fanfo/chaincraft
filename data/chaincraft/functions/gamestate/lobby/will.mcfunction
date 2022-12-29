@@ -1,0 +1,3 @@
+particle dust 0.969 0.882 0.133 1 ~ ~ ~ 0 0 0 1 10
+
+execute as @a[distance=..1.5] run tellraw @s ["\n\n\n\n\n\n\n\n\n\n\n\n",{"text": "Juicy Blue Will: ","color": "aqua"},{"translate":"lobby.credit.4"},"\n\n",{"translate":"lobby.click"},"\n\n ",{"text": "Youtube","underlined": true, "color": "dark_red", "clickEvent": {"action":"open_url","value":"https://www.youtube.com/@JuicyBlueWill/featured"}},"\n ",{"text": "Discord","underlined": true, "color": "blue", "clickEvent": {"action":"open_url","value":"https://discord.com/invite/5yTQMuY"}},"\n ",{"text": "Twitter","underlined": true, "color": "aqua", "clickEvent": {"action":"open_url","value":"https://twitter.com/Juicy_Blue_Will"}},"\n"]

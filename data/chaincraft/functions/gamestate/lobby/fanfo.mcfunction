@@ -1,0 +1,3 @@
+particle dust 0.969 0.882 0.133 1 ~ ~ ~ 0 0 0 1 10
+
+execute as @a[distance=..1.5] run tellraw @s ["\n\n\n\n\n\n\n\n\n\n\n\n",{"text": "Fanfo: ","color": "light_purple"},{"translate":"lobby.credit.1"},"\n\n",{"translate":"lobby.click"},"\n\n ",{"text": "Youtube","underlined": true, "color": "dark_red", "clickEvent": {"action":"open_url","value":"https://www.youtube.com/channel/UC180YCYsM3wNvTxMa4mUc0g"}},"\n ",{"text": "Discord","underlined": true, "color": "blue", "clickEvent": {"action":"open_url","value":"https://discord.com/invite/zf6g5KQ6H4"}},"\n ",{"text": "Patreon","underlined": true, "color": "gold", "clickEvent": {"action":"open_url","value":"https://www.patreon.com/Fanfo"}},"\n"]

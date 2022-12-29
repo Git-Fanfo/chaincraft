@@ -36,6 +36,10 @@ scoreboard objectives add timer dummy
 scoreboard objectives add combo totalKillCount
 scoreboard objectives add max_combo dummy
 scoreboard objectives add pb dummy "Personal Bests"
+execute unless score BlueBrawl10 pb matches 1011800.. run scoreboard players set BlueBrawl10 pb 1011800
+execute unless score FanfoYT pb matches 242700.. run scoreboard players set FanfoYT pb 242700
+execute unless score zabatZabat pb matches 337800.. run scoreboard players set zabatZabat pb 337800
+execute unless score DarkYeagerMC pb matches 35100.. run scoreboard players set DarkYeagerMC pb 35100
 scoreboard objectives add score dummy "Score"
 scoreboard objectives add combo_cooldown dummy
 scoreboard objectives add health health

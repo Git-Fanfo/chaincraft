@@ -4,7 +4,6 @@ gamerule mobGriefing false
 gamerule fallDamage false
 gamerule doImmediateRespawn true
 gamerule showDeathMessages false
-
 # Initial config
 scoreboard objectives add config dummy
 execute unless score epicfights config matches 0.. run scoreboard players set epicfights config 0

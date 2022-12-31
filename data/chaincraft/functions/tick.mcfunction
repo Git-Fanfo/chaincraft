@@ -14,6 +14,8 @@ execute if score intro timer matches 0.. run function chaincraft:gamestate/intro
 execute if score gamestate config matches 2 run function chaincraft:gamestate/game
 execute if score timer music matches 0.. run function chaincraft:music/main
 
+function chaincraft:gamestate/config
+
 execute positioned 135 11 -28 run function chaincraft:gamestate/lobby/fanfo
 execute positioned 136 11 -30 run function chaincraft:gamestate/lobby/dark
 execute positioned 136 11 -26 run function chaincraft:gamestate/lobby/zabat
